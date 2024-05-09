@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Game</title>
+</head>
+<body>
+
+    <p class="center" id="controltxt">Control: <el id="controltx">none</el> </p>
+
+    <button onclick="changeConfig()" id="btncfg">Изменить конфигурацию</button>
+
+    <div id="cfg">
+        <label for="keyUp">Вверх: <input type="text" maxlength="1" name="keyUp" id="keyUp" class="oneLgh"></label>
+        <label for="keyLeft">Влево: <input type="text" maxlength="1" name="keyLeft" id="keyLeft" class="oneLgh"></label>
+        <label for="keyRight">Вправо: <input type="text" maxlength="1" name="keyRight" id="keyRight" class="oneLgh"></label>
+        <label for="keyDown">Вниз: <input type="text" maxlength="1" name="keyDown" id="keyDown" class="oneLgh"></label>
+        <button id="btncfgSave" onclick="saveConfig()">Сохранить изменения</button>
+    </div>
+
+    <div id="gameplay">
+        <img src="media/arrow-up.svg" alt="up" id="upperArrow" draggable="false">
+        <img src="media/arrow-down.svg" alt="up" id="downerArrow" draggable="false">
+        <img src="media/arrow-left.svg" alt="up" id="lefterArrow" draggable="false">
+        <img src="media/arrow-right.svg" alt="up" id="righterArrow" draggable="false">
+        <p id="textStreak">Streak: <el id="str">0</el></p>
+        <p id="textMaxStreak">Max streak: <el id="maxstr">0</el></p>
+        <p id="textLastStreak">Last streak: <el id="lststr">0</el></p>
+    </div>
+
+    <button onclick="randomize()" id="startgame">Начать игру</button>
+
+    <div id="song">
+        <button id="btnSong"><input type="range" name="volume" id="volumeRange" value="3"></button>
+        <button onclick="muteVolumeFunc()" id="btnSongMute"><img src="media/volume_off.svg" alt="volume"></button>
+    </div>
+
+    <div id="controls">
+        <p>Вверх: <el id="upControl"></el><br>
+        Влево: <el id="leftControl"></el><br>
+        Вправо: <el id="rightControl"></el><br>
+        Вниз: <el id="downControl"></el>
+        </p>
+    </div>
+    
+    <script src="js/gme.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+body {
+    background-color: #212121;
+    color: aliceblue;
+}
+
+.center {
+    text-align: center;
+}
+
+#btnSong {
+    background: none;
+    position: absolute;
+    top: 89.8%;
+    right: 36%;
+}
+
+#btnSongMute {
+    background: none;
+    position: absolute;
+    top: 93%;
+    right: 39%;
+}
+
+#cfg {
+    position: absolute;
+    top: 93%;
+    left: 43%;
+    display: none;
+}
+
+#btncfg {
+    position: absolute;
+    top: 90%;
+    left: 46%;
+}
+
+#btncfgSave {
+    position: absolute;
+    top: 140%;
+    left: 7%;
+}
+
+#controls {
+    position: absolute;
+    top: 89%;
+    left: 1%;
+}
+
+#gameplay {
+    width: 1080px;
+    height: 607px;
+    border: 1px white solid;
+    position: absolute;
+    top: 10%;
+    left: 22%;
+}
+
+#upperArrow {
+    width: 650px;
+    position: absolute;
+    left: 20%;
+    display: none;
+}
+
+#downerArrow {
+    width: 650px;
+    position: absolute;
+    left: 20%;
+    display: none;
+}
+
+#lefterArrow {
+    width: 650px;
+    position: absolute;
+    display: none;
+    left: 20%;
+}
+
+#righterArrow {
+    width: 650px;
+    position: absolute;
+    display: none;
+    left: 20%;
+}
+
+#textStreak {
+    position: absolute;
+    left: 3%;
+}
+
+#textMaxStreak {
+    position: absolute;
+    top: 3%;
+    left: 3%;
+}
+
+#textLastStreak {
+    position: absolute;
+    top: 6%;
+    left: 3%;
+}
+
+#startgame {
+    position: absolute;
+    top: 75%;
+    left: 48%;
+}
+
+.oneLgh {
+    width: 1%;
+}
